@@ -2,6 +2,7 @@ package net.fabricmc.gilded;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.gilded.item.GildedChestplate;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.registry.Registry;
@@ -14,7 +15,7 @@ public class Main implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LogManager.getLogger("modid");
-	public static final Item GILDED_DIAMOND_CHESTPLATE = new Item(new FabricItemSettings().group(ItemGroup.COMBAT));
+	public static final Item GILDED_DIAMOND_CHESTPLATE = new GildedChestplate(new FabricItemSettings().group(ItemGroup.COMBAT));
 
 	@Override
 	public void onInitialize() {
