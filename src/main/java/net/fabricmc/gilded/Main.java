@@ -22,7 +22,10 @@ public class Main implements ModInitializer {
 	public static final GildedDiamond GILDED_DIAMOND_ARMOR_MATERIAL = new GildedDiamond();
 	//public static final Item GILDED_DIAMOND_MATERIAL_ITEM = new GildedChestplate(new FabricItemSettings().group(ItemGroup.COMBAT));
 
+	public static final Item GILDED_DIAMOND_HELMET = new ArmorItem(GILDED_DIAMOND_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
 	public static final Item GILDED_DIAMOND_CHESTPLATE = new ArmorItem(GILDED_DIAMOND_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+	public static final Item GILDED_DIAMOND_LEGGINGS = new ArmorItem(GILDED_DIAMOND_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+	public static final Item GILDED_DIAMOND_BOOTS = new ArmorItem(GILDED_DIAMOND_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
 	@Override
 	public void onInitialize() {
@@ -33,6 +36,9 @@ public class Main implements ModInitializer {
 
 		LOGGER.info("we");
 
+		Registry.register(Registry.ITEM, new Identifier("gilded", "gilded_diamond_helmet"), GILDED_DIAMOND_HELMET);
 		Registry.register(Registry.ITEM, new Identifier("gilded", "gilded_diamond_chestplate"), GILDED_DIAMOND_CHESTPLATE);
+		Registry.register(Registry.ITEM, new Identifier("gilded", "gilded_diamond_leggings"), GILDED_DIAMOND_LEGGINGS);
+		Registry.register(Registry.ITEM, new Identifier("gilded", "gilded_diamond_boots"), GILDED_DIAMOND_BOOTS);
 	}
 }
