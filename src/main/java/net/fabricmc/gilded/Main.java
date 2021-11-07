@@ -1,8 +1,6 @@
 package net.fabricmc.gilded;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.gilded.item.GildedChestplate;
 import net.fabricmc.gilded.materials.GildedDiamond;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;

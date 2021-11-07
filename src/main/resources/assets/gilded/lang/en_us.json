@@ -1,3 +1,6 @@
 {
-  "item.gilded.gilded_diamond_chestplate" : "Gilded Diamond Chestplate"
+  "item.gilded.gilded_diamond_chestplate" : "Gilded Diamond Chestplate",
+  "item.gilded.gilded_diamond_helmet" : "Gilded Diamond Helmet",
+  "item.gilded.gilded_diamond_leggings" : "Gilded Diamond Leggings",
+  "item.gilded.gilded_diamond_boots" : "Gilded Diamond Boots"
 }
